@@ -6,8 +6,8 @@ This is NOT [msxpico](https://github.com/jeroentaverne/msxpico) project!
 
 The main reason this project exists is that [msxpico](https://github.com/jeroentaverne/msxpico) is closed source, feel free to build firmware, make contributions or redistributing this project freely!
 
-![](./picomsx/IMG/01.png)
-![](./picomsx/IMG/02.png)
+![](./IMG/01.png)
+![](./IMG/02.png)
 
 ## Features
 
