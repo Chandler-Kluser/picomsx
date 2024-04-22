@@ -1,0 +1,106 @@
+
+(rules PCB pico-msxcart
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 5274)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.6)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.6)
+    )
+  )
+  (rule
+    (width 200.0)
+    (clearance 200.0)
+    (clearance 100.0 (type smd_to_turn_gap))
+    (clearance 200.0 (type smd))
+    (clearance 200.0 (type "kicad_default"))
+    (clearance 200.0 (type PWR))
+    (clearance 200.0 (type kicad))
+  )
+  (padstack "Via[0-1]_600:300_um"
+    (shape
+      (circle F.Cu 600.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 600.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_600:300_um" "Via[0-1]_600:300_um" default
+  )
+  (via 
+    "Via[0-1]_600:300_um-kicad_default" "Via[0-1]_600:300_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_600:300_um-PWR" "Via[0-1]_600:300_um" PWR
+  )
+  (via_rule
+    default "Via[0-1]_600:300_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_600:300_um-kicad_default"
+  )
+  (via_rule
+    PWR "Via[0-1]_600:300_um-PWR"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 200.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    "unconnected-(U1-ADC_VREF-Pad35)" "unconnected-(U1-VSYS-Pad39)" "unconnected-(U6-A7-Pad9)" BUSDIR "CLOCK_3V3" BUSDIR3V3 RD "unconnected-(U1-3V3_EN-Pad37)"
+    "unconnected-(U1-3V3-Pad36)" "SLTSL_3V3" INT "Net-(U6-B2)" "RD_3V3" SLTSL INT3V3 "unconnected-(U6-B7-Pad11)"
+    "WR_3V3" WAIT3V3 WR CLOCK "MP7_3V3" "MP2_3V3" CS1 RFSH
+    MERQ M1 "MP1_3V3" "MP5_3V3" RESET "MP6_3V3" CS2 "MSEL2_3V3"
+    CS12 IORQ "MP4_3V3" "MP3_3V3" "MP0_3V3" D5 "D1_3V3" "D5_3V3"
+    "D2_3V3" "D7_3V3" D7 D2 D4 D6 "D6_3V3" "D0_3V3"
+    D3 D0 D1 "D4_3V3" "D3_3V3" DATADIR A13 "MSEL1_3V3"
+    A14 A15 A10 A8 A11 A9 A12 A7
+    A5 "MSEL0_3V3" A0 A4 A3 A6 A1 A2
+    "unconnected-(U1-ADC_VREF-Pad35)_0" "Net-(TP10-PROBE)" "unconnected-(U1-3V3-Pad36)_0" "Net-(Q1-Pad2)" "Net-(J1-SOUNDIN)" "Net-(J1-RSV@1)" WAIT "Net-(J1-RSV@2)"
+    "Net-(J1--12)" "Net-(J1-+12)" "Net-(J1-SW1)" "unconnected-(U10-TAB-Pad4)" "unconnected-(J2-SHIELD-PadS1)" "unconnected-(J2-SHIELD-PadS1)_0" "unconnected-(J2-D--Pad02)" "unconnected-(J2-D+-Pad03)"
+    (clearance_class "kicad_default")
+    (via_rule "kicad_default")
+    (rule
+      (width 200.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class PWR
+    GND "VCC_3V3" VCC "VCC_4V7"
+    (clearance_class PWR)
+    (via_rule PWR)
+    (rule
+      (width 400.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

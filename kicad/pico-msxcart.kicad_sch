@@ -3436,6 +3436,175 @@
 				)
 			)
 		)
+		(symbol "pico-msxcart:USB-A"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "pico-msxcart:USB-A"
+				(at 0 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "USB-A_0_0"
+				(rectangle
+					(start -5.08 7.62)
+					(end 5.08 -10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin power_in line
+					(at -10.16 5.08 0)
+					(length 5.08)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "01"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -10.16 2.54 0)
+					(length 5.08)
+					(name "D-"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "02"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -10.16 0 0)
+					(length 5.08)
+					(name "D+"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "03"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -10.16 -2.54 0)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "04"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -7.62 0)
+					(length 5.08)
+					(name "SHIELD"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "S1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -7.62 0)
+					(length 5.08)
+					(name "SHIELD"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "S2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+		)
 	)
 	(junction
 		(at 118.11 142.24)
@@ -3504,6 +3673,10 @@
 		(uuid "dcff4a0a-1bd9-41dd-a34f-d776dbf05bd1")
 	)
 	(no_connect
+		(at 247.65 154.94)
+		(uuid "00c1154e-7d84-45fe-bf6d-5d57c338ee5a")
+	)
+	(no_connect
 		(at 259.08 91.44)
 		(uuid "03b8eb48-27d4-41ae-b527-f113f58e3906")
 	)
@@ -3512,12 +3685,20 @@
 		(uuid "3e2c272c-c3b2-49e8-9222-a4caa5024d67")
 	)
 	(no_connect
+		(at 247.65 147.32)
+		(uuid "69b65c52-e45b-4431-8f3a-825f3dae00bc")
+	)
+	(no_connect
 		(at 134.62 154.94)
 		(uuid "90d9b206-dc89-4ab6-a932-63392eca9811")
 	)
 	(no_connect
 		(at 231.14 45.72)
 		(uuid "b3ae80b8-f911-45df-9935-15ebea04fadb")
+	)
+	(no_connect
+		(at 247.65 144.78)
+		(uuid "e2603668-c054-4191-b760-d6325fb65b8b")
 	)
 	(no_connect
 		(at 149.86 157.48)
@@ -5828,6 +6009,28 @@
 			)
 		)
 	)
+	(global_label "GND"
+		(shape input)
+		(at 247.65 149.86 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "840eb5df-0a40-4f03-8406-61b1c325fcc6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 240.7943 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "A5"
 		(shape output)
 		(at 38.1 72.39 180)
@@ -5956,6 +6159,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VCC_4V7"
+		(shape input)
+		(at 247.65 142.24 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8c5f4ae2-d169-4844-88ac-599df450c927")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 236.561 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -9665,6 +9890,88 @@
 			(project "pico-msxcart"
 				(path "/c6ea766e-7213-4fff-afb7-62b69cefee35"
 					(reference "U6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "pico-msxcart:USB-A")
+		(at 257.81 147.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b6db21b3-ba5b-4f1d-be99-e4c8dcc1c237")
+		(property "Reference" "J2"
+			(at 264.16 147.9549 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 264.16 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "pico-msxcart:USB-A"
+			(at 257.81 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 257.81 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 257.81 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "S2"
+			(uuid "3d3ec7b1-f255-4b75-9727-aa51de756797")
+		)
+		(pin "S1"
+			(uuid "a7ef64a8-cae0-4b33-9818-bf97ce292562")
+		)
+		(pin "03"
+			(uuid "e1f89794-8625-46bd-84cb-c49eb4a03632")
+		)
+		(pin "04"
+			(uuid "1ac9a3d3-d7ae-44bf-9f0a-2159ace91ea8")
+		)
+		(pin "01"
+			(uuid "b42335dc-a98d-41fb-87b7-8ca8509210dc")
+		)
+		(pin "02"
+			(uuid "8e15abb1-a524-49ff-8b61-a70c2ed10d9f")
+		)
+		(instances
+			(project "pico-msxcart"
+				(path "/c6ea766e-7213-4fff-afb7-62b69cefee35"
+					(reference "J2")
 					(unit 1)
 				)
 			)
