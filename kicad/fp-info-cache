@@ -1,4 +1,4 @@
-22278007492463
+25705751750210
 pico-msxcart
 2N3904
 
@@ -23,6 +23,13 @@ MSX-CONNECTOR
 pico-msxcart
 MSX-CONNECTOR2
 
+
+0
+50
+50
+pico-msxcart
+MSXCART
+<B>MSX Slot Bus</B>
 
 0
 50
@@ -69,6 +76,13 @@ SMD_CAP
 0
 2
 2
+pico-msxcart
+SOP-14
+
+
+0
+14
+14
 pico-msxcart
 TEST_PROBE
 

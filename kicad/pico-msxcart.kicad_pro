@@ -48,13 +48,13 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [],
       "drc_exclusions": [
         "lib_footprint_mismatch|139242780|81054923|ca29921b-cd72-4284-80ba-afa6d78a26ac|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|146304000|114665125|ba0e56c0-f7e9-4f58-9837-236238ab3826|00000000-0000-0000-0000-000000000000"
+        "lib_footprint_mismatch|140111000|98297200|ba0e56c0-f7e9-4f58-9837-236238ab3826|00000000-0000-0000-0000-000000000000"
       ],
       "meta": {
         "version": 2
@@ -687,7 +687,7 @@
     },
     "net_format_name": "KiCad",
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "./",
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
     "spice_model_current_sheet_as_root": true,
